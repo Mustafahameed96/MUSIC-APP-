@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css"> 
+    <script src="https://kit.fontawesome.com/7e64f2718f.js" crossorigin="anonymous"></script>
+    <title>My Music Album</title>
+</head>
+<body>
+    
+
+
+    <div class="container mt-4 " >
+
+        <h1 class="display-4 text-center ">        
+            My<span class="text-info"><i class="fas fa-music text-info"></i>Music</span>Album</h1>
+
+            <form  class="album-form">
+                <div  class="form-group">
+                <label for="title">Title</label>
+                <input type="text"  id="title" class="form-control">
+            </div>
+            <div  class="form-group">
+                    <label for="title">Band</label>
+                    <input type="text"  id="band" class="form-control">
+                </div>
+                <div  class="form-group">
+                        <label for="title">Release year</label>
+                        <input type="text"  id="year" class="form-control">
+                    </div>
+                    <input type="submit" value="Add Album" class="btn btn-info btn-block">
+            </form>
+            <table class="table table-striped mt-5">
+
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Band</th>
+                        <th>Release year</th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+                <tbody id="album-list"></tbody>
+            </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
